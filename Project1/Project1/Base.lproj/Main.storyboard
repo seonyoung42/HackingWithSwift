@@ -54,15 +54,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wQU-Mj-bk5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wQU-Mj-bk5">
+                                <rect key="frame" x="0.0" y="94" width="414" height="708"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B3F-aI-e4E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wQU-Mj-bk5" firstAttribute="centerX" secondItem="crH-kV-dI9" secondAttribute="centerX" id="AEe-Zp-ZjT"/>
-                            <constraint firstItem="wQU-Mj-bk5" firstAttribute="top" secondItem="crH-kV-dI9" secondAttribute="topMargin" constant="-44" id="Sex-su-7Tk"/>
+                            <constraint firstItem="wQU-Mj-bk5" firstAttribute="top" secondItem="crH-kV-dI9" secondAttribute="topMargin" constant="50" id="Sex-su-7Tk"/>
                             <constraint firstItem="wQU-Mj-bk5" firstAttribute="centerY" secondItem="crH-kV-dI9" secondAttribute="centerY" id="VzE-28-TtD"/>
                             <constraint firstItem="wQU-Mj-bk5" firstAttribute="leading" secondItem="B3F-aI-e4E" secondAttribute="leading" id="gbt-PI-zqe"/>
                         </constraints>
