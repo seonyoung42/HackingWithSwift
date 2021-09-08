@@ -42,8 +42,11 @@ class ViewController: UIViewController {
         
         [button1,button2,button3].forEach {
             $0?.layer.borderWidth = 1
-            $0?.layer.borderColor = UIColor.lightGray.cgColor 
+            $0?.layer.borderColor = UIColor.lightGray.cgColor
         }
+        
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(showScore))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(showScore))
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
@@ -85,5 +88,11 @@ class ViewController: UIViewController {
         present(ac, animated: true, completion: nil)
     }
     
+    
+    @objc func showScore() {
+        let vc = UIAlertController(title: "Score", message: "Your score is \(score)", preferredStyle: .alert)
+        vc.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(vc, animated: true, completion: nil)
+    }
 }
 
