@@ -19,3 +19,7 @@
 
 ### Project 4
 + [Day 24](https://velog.io/@sun02/100-days-of-Swift-Day-24)
++ [Day 25](https://velog.io/@sun02/100-Days-of-Swift-Day-25)
+
+### Project 5
++ [Day 27 - capture](https://velog.io/@sun02/100-days-of-Swift-Day-27)
