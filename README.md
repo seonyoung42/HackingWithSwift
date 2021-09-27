@@ -24,3 +24,7 @@
 ### Project 5
 + [Day 27 - capture list](https://velog.io/@sun02/100-days-of-Swift-Day-27)
 + [Day 27](https://velog.io/@sun02/100-days-of-Swift-Day-27-lpuijbzv)
++ [Day 28](https://velog.io/@sun02/100-days-of-Swift-Day-28)
+
+### Project 6
++ [Day 30](https://velog.io/@sun02/100-days-of-Swift-Day-30Auto-layout-in-code)
