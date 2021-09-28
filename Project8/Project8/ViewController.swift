@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             scorelabel.text = "Score: \(score)"
         }
     }
+    var realScore = 0
     var level = 1
     
     override func loadView() {
@@ -68,6 +69,8 @@ class ViewController: UIViewController {
         clear.addTarget(self, action: #selector(clearTepped(_:)), for: .touchUpInside)
         
         let buttonsView = UIView()
+        buttonsView.layer.borderWidth = 5
+        buttonsView.layer.borderColor = UIColor.lightGray.cgColor
         
         [submit,clear,buttonsView].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -157,14 +160,29 @@ class ViewController: UIViewController {
             
             currentAnswer.text = ""
             score += 1
+            realScore += 1
             
-            if score % 7 == 0 {
+            if realScore % 7 == 0 {
                 let ac = UIAlertController(title: "Well done", message: "Are you ready for the next level", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's goal", style: .default, handler: levelUp))
                 present(ac, animated: true, completion: nil)
             }
+        } else {
+            let ac = UIAlertController(title: "Wrong", message: "Try again", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
+                self.activatedButton.forEach {
+                    $0.isHidden = false
+                }
+                self.activatedButton.removeAll()
+                self.currentAnswer.text = ""
+            }))
+            
+            present(ac, animated: true, completion: nil)
+            score -= 1
+      
         }
     }
+    
     
     @objc func clearTepped(_ sender: UIButton) {
         currentAnswer.text = ""
