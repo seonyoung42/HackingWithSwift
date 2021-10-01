@@ -52,9 +52,14 @@ class ViewController: UITableViewController {
         
         let filterAction = UIAlertAction(title: "Filter", style: .default) { _ in
             guard let filterWord = ac.textFields?[0].text else { return }
-            self.showPetitions(for: filterWord)
+            
+            DispatchQueue.global().async {
+                self.showPetitions(for: filterWord)
+                
+            }
             
         }
+        
         ac.addAction(filterAction)
         present(ac, animated: true, completion: nil)
     }
@@ -68,8 +73,10 @@ class ViewController: UITableViewController {
                 filteredPetitions.append(petition)
             }
         }
-        
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        //tableView.reloadData()
     }
     
     

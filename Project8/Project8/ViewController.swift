@@ -137,7 +137,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadLevel()
+        DispatchQueue.global().async {
+            self.loadLevel()
+        }
+//        loadLevel()
     }
 
 
@@ -220,15 +223,19 @@ class ViewController: UIViewController {
             }
         }
         
-        cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
-        answerLabel.text = solutionStrin.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        letterButtons.shuffle()
-        
-        if letterButtons.count == letterBits.count {
-            for i in 0..<letterButtons.count {
-                letterButtons[i].setTitle(letterBits[i], for: .normal)
+        DispatchQueue.main.async { [weak self] in
+            self?.cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
+            self?.answerLabel.text = solutionStrin.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            self?.letterButtons.shuffle()
+            if let letterbuttons = self?.letterButtons {
+                if letterbuttons.count == letterBits.count {
+                    for i in 0..<letterbuttons.count {
+                        self?.letterButtons[i].setTitle(letterBits[i], for: .normal)
+                    }
+                }
             }
+            
         }
     }
     
