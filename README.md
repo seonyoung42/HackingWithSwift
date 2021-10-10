@@ -28,3 +28,6 @@
 
 ### Project 6
 + [Day 30](https://velog.io/@sun02/100-days-of-Swift-Day-30Auto-layout-in-code)
+
+### Project 7
++ [Day 33](https://velog.io/@sun02/100-days-of-Swift-Day33Codable)
