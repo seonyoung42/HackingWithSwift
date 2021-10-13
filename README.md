@@ -35,3 +35,4 @@
 
 ### Project 8
 + [Day 37 - enumerated, replacingOccurences,firstIndexOf, joined, didSet](https://velog.io/@sun02/Day-37-)
++ [Day 39 - GCD, performSelector()](https://velog.io/@sun02/Day-39-GCD-performSelectorinBackground)
