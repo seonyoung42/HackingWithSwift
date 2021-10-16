@@ -5,6 +5,8 @@
 + [Day 3](https://velog.io/@sun02/100-days-of-Swift-Day-3)
 + [Day 4](https://velog.io/@sun02/100-days-of-Swift-Day-4)
 + [Day 5](https://velog.io/@sun02/100-days-of-Swift-Day-5)
++ [Day 6](https://velog.io/@sun02/100-days-of-Swift-Day-6)
++ [Day 7](https://velog.io/@sun02/100-days-of-Swift-Day-7)
 
 
 ### Project 1
