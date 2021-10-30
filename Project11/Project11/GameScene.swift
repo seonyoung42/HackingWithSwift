@@ -102,34 +102,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(bouncer)
     }
     
-//    func makeSlot(at position: CGPoint, isGood: Bool) {
-//        var slotBase: SKSpriteNode
-//        var slotGlow: SKSpriteNode
-//
-//        if isGood {
-//            slotBase = SKSpriteNode(imageNamed: "slotBaseGood")
-//            slotGlow = SKSpriteNode(imageNamed: "slotGlowGood")
-//            slotBase.name = "good"
-//        } else {
-//            slotBase = SKSpriteNode(imageNamed: "slotBaseBad")
-//            slotGlow = SKSpriteNode(imageNamed: "slotGlowBad")
-//            slotBase.name = "bad"
-//        }
-//
-//        slotBase.position = position
-//        slotGlow.position = position
-//
-//        slotBase.physicsBody = SKPhysicsBody(rectangleOf: slotBase.size)
-//        slotBase.physicsBody?.isDynamic = false
-//
-//        addChild(slotBase)
-//        addChild(slotGlow)
-//
-//        let spin = SKAction.rotate(byAngle: .pi, duration: 10)
-//        let spinForever = SKAction.repeatForever(spin)
-//        slotGlow.run(spinForever)
-//    }
-    
+
     func makeSlot(at position: CGPoint, isGood: Bool) {
         var slotBase: SKSpriteNode
         var slotGlow: SKSpriteNode
@@ -158,7 +131,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         slotGlow.run(spinForever)
 
     }
-//
+
     func collision(between ball: SKNode, object: SKNode) {
         if object.name == "good" {
             destroy(ball: ball)
@@ -170,6 +143,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func destroy(ball: SKNode) {
+        
+        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+            fireParticles.position = ball.position
+            addChild(fireParticles)
+        }
+        
         ball.removeFromParent()
     }
     
