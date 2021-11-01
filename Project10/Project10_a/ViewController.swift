@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Project 10
+//  Project10_a
 //
-//  Created by 장선영 on 2021/10/03.
+//  Created by 장선영 on 2021/11/01.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
         view.backgroundColor = .black

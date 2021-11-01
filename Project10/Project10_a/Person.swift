@@ -1,8 +1,8 @@
 //
 //  Person.swift
-//  Project 10
+//  Project10_a
 //
-//  Created by 장선영 on 2021/10/04.
+//  Created by 장선영 on 2021/11/01.
 //
 
 import UIKit
@@ -17,3 +17,4 @@ class Person: NSObject {
     }
 
 }
+

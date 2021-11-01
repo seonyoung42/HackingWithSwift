@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Project 10
+//  Project10_a
 //
-//  Created by 장선영 on 2021/10/03.
+//  Created by 장선영 on 2021/11/01.
 //
 
 import UIKit
