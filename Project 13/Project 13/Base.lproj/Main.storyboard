@@ -43,7 +43,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-Ig-4gV">
                                 <rect key="frame" x="102" y="758" width="294" height="30"/>
                                 <connections>
-                                    <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="c7W-ai-QbJ"/>
+                                    <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="onM-XK-ZN1"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-Wb-dtQ">
@@ -54,7 +54,7 @@
                                 </constraints>
                                 <state key="normal" title="Chage filter"/>
                                 <connections>
-                                    <action selector="chageFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugP-Og-mqh"/>
+                                    <action selector="chageFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5I-sa-3gK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUN-8y-gKu">
@@ -87,8 +87,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="bAc-eW-sw2"/>
                     <connections>
-                        <outlet property="imageView" destination="fQD-IB-HU0" id="cua-4m-oMb"/>
-                        <outlet property="intensity" destination="ngC-Ig-4gV" id="3rL-Jf-755"/>
+                        <outlet property="ChangeFilterBtn" destination="Bb6-Wb-dtQ" id="XvS-EB-goN"/>
+                        <outlet property="imageView" destination="fQD-IB-HU0" id="1T6-lF-9dP"/>
+                        <outlet property="intensity" destination="ngC-Ig-4gV" id="1pg-fE-rsh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
