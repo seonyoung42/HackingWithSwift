@@ -36,6 +36,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageView.alpha = 0.0
         guard let image = info[.editedImage] as? UIImage else {
             return
         }
@@ -43,8 +44,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         currentImage = image
         
         let beginImage = CIImage(image: currentImage)
+        
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         applyProcessing()
+        
+        UIView.animate(withDuration: 1) {
+            self.imageView.alpha = 1.0
+        }
     }
     
     @IBAction func chageFilter(_ sender: UIButton) {
@@ -71,7 +77,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     func setFilter(action: UIAlertAction) {
         guard currentImage != nil else { return }
         guard let actionTitle = action.title else { return }
-        
         
         
         currentFilter = CIFilter(name: actionTitle)

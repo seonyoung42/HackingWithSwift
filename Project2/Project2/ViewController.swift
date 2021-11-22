@@ -58,6 +58,19 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
+        for button in [button1,button2,button3] {
+            button?.alpha = 0.0
+            button?.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        }
+        
+        UIView.animate(withDuration: 0.5) {
+            for button in [self.button1,self.button2,self.button3] {
+                button?.alpha = 1.0
+                button?.transform = .identity
+            }
+        }
+        
+        
         title = countries[correctAnswer].uppercased() + "  score: \(score)"
         
         if questions >= 10 {
@@ -82,6 +95,13 @@ class ViewController: UIViewController {
             message = "Thats's the flag of \(countries[sender.tag].uppercased())"
             score -= 1
         }
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 5, options: []) {
+            sender.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }
+//
+//        sender.transform = .identity
+
         
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Continue", style:.default, handler: askQuestion))

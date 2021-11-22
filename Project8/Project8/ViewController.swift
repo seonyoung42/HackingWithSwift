@@ -148,7 +148,11 @@ class ViewController: UIViewController {
         guard let buttonTitle = sender.titleLabel?.text else { return }
         currentAnswer.text = currentAnswer.text?.appending(buttonTitle)
         activatedButton.append(sender)
-        sender.isHidden = true
+        
+        UIView.animate(withDuration: 0.75) {
+            sender.alpha = 0.0
+        }
+//        sender.isHidden = true
     }
     
     @objc func submitTepped(_ sender: UIButton) {
@@ -190,9 +194,15 @@ class ViewController: UIViewController {
     @objc func clearTepped(_ sender: UIButton) {
         currentAnswer.text = ""
         
-        for button in activatedButton {
-            button.isHidden = false
+        UIView.animate(withDuration: 1) {
+            for button in self.letterButtons {
+                button.alpha = 1.0
+            }
         }
+        
+//        for button in activatedButton {
+//            button.isHidden = false
+//        }
         
         activatedButton.removeAll()
     }
@@ -244,9 +254,15 @@ class ViewController: UIViewController {
         solutions.removeAll(keepingCapacity: true)
         loadLevel()
         
-        for button in letterButtons {
-            button.isHidden = false
+        UIView.animate(withDuration: 1) {
+            for button in self.letterButtons {
+                button.alpha = 1.0
+            }
         }
+        
+//        for button in letterButtons {
+//            button.isHidden = false
+//        }
     }
 }
 
