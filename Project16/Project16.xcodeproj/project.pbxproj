@@ -14,6 +14,7 @@
 		2BCEE5BD274C86D2004427DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEE5BC274C86D2004427DC /* Assets.xcassets */; };
 		2BCEE5C0274C86D2004427DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEE5BE274C86D2004427DC /* LaunchScreen.storyboard */; };
 		2BCEE5C8274C8815004427DC /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE5C7274C8815004427DC /* Capital.swift */; };
+		2BCEE5CA274C9155004427DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE5C9274C9155004427DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2BCEE5BF274C86D2004427DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BCEE5C1274C86D2004427DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCEE5C7274C8815004427DC /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		2BCEE5C9274C9155004427DC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2BCEE5B3274C86D0004427DC /* AppDelegate.swift */,
 				2BCEE5B5274C86D0004427DC /* SceneDelegate.swift */,
 				2BCEE5B7274C86D0004427DC /* ViewController.swift */,
+				2BCEE5C9274C9155004427DC /* WebViewController.swift */,
 				2BCEE5C7274C8815004427DC /* Capital.swift */,
 				2BCEE5B9274C86D0004427DC /* Main.storyboard */,
 				2BCEE5BC274C86D2004427DC /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				2BCEE5B8274C86D0004427DC /* ViewController.swift in Sources */,
 				2BCEE5B4274C86D0004427DC /* AppDelegate.swift in Sources */,
 				2BCEE5C8274C8815004427DC /* Capital.swift in Sources */,
+				2BCEE5CA274C9155004427DC /* WebViewController.swift in Sources */,
 				2BCEE5B6274C86D0004427DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

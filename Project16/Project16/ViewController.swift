@@ -25,7 +25,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         mapView.addAnnotations([london,oslo,paris,rome,washington])
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "mapType", style: .plain, target: self, action: #selector(chooseMapType))
+        
     }
+    
+    @objc func chooseMapType() {
+        let ac = UIAlertController(title: "MapTyle", message: "you can choose a mapType", preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "hybrid", style: .default, handler: { _ in
+            self.mapView.mapType = .hybrid
+        }))
+        ac.addAction(UIAlertAction(title: "mutedStandard", style: .default, handler: { _ in
+            self.mapView.mapType = .mutedStandard
+        }))
+        ac.addAction(UIAlertAction(title: "satellite", style: .default, handler: { _ in
+            self.mapView.mapType = .satellite
+        }))
+        
+        present(ac, animated: true, completion: nil)
+    }
+    
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard annotation is Capital else { return nil }
@@ -43,6 +61,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
             annotationView?.annotation = annotation
         }
         
+        if let pinAnnotation = annotationView as? MKPinAnnotationView {
+            pinAnnotation.pinTintColor = .blue
+        }
+        
+        
         return annotationView
         
     }
@@ -52,10 +75,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         let placeName = capital.title
         let placeInfo = capital.info
+
         
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction((UIAlertAction(title: "OK", style: .default, handler: nil)))
-        present(ac, animated: true, completion: nil)
+        if let destination = storyboard?.instantiateViewController(identifier: "WebViewController") as? WebViewController {
+            destination.cityName = placeName
+            navigationController?.pushViewController(destination, animated: true)
+        } else {
+            let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
+            ac.addAction((UIAlertAction(title: "OK", style: .default, handler: nil)))
+            present(ac, animated: true, completion: nil)
+        }
     }
 
 }
