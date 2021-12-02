@@ -17,15 +17,12 @@
 |Project5|Capture lists in Swift </br> UITextChecker to find invalid words, inserting table view rows with animation, and more.|[Day 27 - capture list](https://velog.io/@sun02/100-days-of-Swift-Day-27)</br>  [Day 27](https://velog.io/@sun02/100-days-of-Swift-Day-27-lpuijbzv)</br>  [Day 28](https://velog.io/@sun02/100-days-of-Swift-Day-28)|
 |Project6|Aspect ratio constraints, Visual Format language, Auto Layout anchors and more.|[Day 30](https://velog.io/@sun02/100-days-of-Swift-Day-30Auto-layout-in-code)|
 |Project7| UITabBarController, Data, Codable, HTML into a web view, and more.|[Day 33](https://velog.io/@sun02/100-days-of-Swift-Day33Codable)</br>  [Day 34 - HTMLString, add Tabbar in code](https://velog.io/@sun02/100-days-of-Swift-Day-34HTMLString-add-Tabbar-in-code)|
-|Project8|테스트2|[Day 37 - enumerated, replacingOccurences,firstIndexOf, joined, didSet](https://velog.io/@sun02/Day-37-)</br>  [Day 39 - GCD, performSelector()](https://velog.io/@sun02/Day-39-GCD-performSelectorinBackground)|
-|Project9|테스트2|테스트3|
-|Project10|테스트2|테스트3|
-|Project11|테스트2|테스트3|
-|Project12|테스트2|[Day 48 - UserDefaults](https://velog.io/@sun02/Day-48-UserDefaults)|
-|Project13|테스트2|테스트3|
-|Project14|테스트2|테스트3|
-|Project15|테스트2|테스트3|
-|Project16|테스트2|테스트3|
+|Project8| Text alignment, layout margins, UIFont, adding targets to a button, separating and joining strings, hiding views, and more.|[Day 37 - enumerated, replacingOccurences,firstIndexOf, joined, didSet](https://velog.io/@sun02/Day-37-)</br> |
+|Project9|Grand Central Dispatch, quality of service queues, performSelector(), and more.|[Day 39 - GCD, performSelector()](https://velog.io/@sun02/Day-39-GCD-performSelectorinBackground)|
+|Project10|UICollectionView, UICollectionViewCell, UIImagePickerController, NSObject, and more.||
+|Project11|SKSpriteNode, SKPhysicsBody, SKAction, SKPhysicsContactDelegate, SKLabelNode, SKEmitterNode and more.||
+|Project12|UserDefaults, NSCoding, Codable and more.|[Day 48 - UserDefaults](https://velog.io/@sun02/Day-48-UserDefaults) </br> [Day 49 - Codable](https://velog.io/@sun02/Day-49-Codable)|
+
 
 
 
