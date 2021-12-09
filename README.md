@@ -1,13 +1,21 @@
 # HackingWithSwift
 
-### Swift 문법
-+ [Day 2](https://velog.io/@sun02/100-days-of-Swift-Day-2)
-+ [Day 3](https://velog.io/@sun02/100-days-of-Swift-Day-3)
-+ [Day 4](https://velog.io/@sun02/100-days-of-Swift-Day-4)
-+ [Day 5](https://velog.io/@sun02/100-days-of-Swift-Day-5)
-+ [Day 6](https://velog.io/@sun02/100-days-of-Swift-Day-6)
-+ [Day 7](https://velog.io/@sun02/100-days-of-Swift-Day-7)
+### Introduction to Swift
 
+|Swift|Contents|Velog-posts|
+|------|---|---|
+|Day 2|Arrays, dictionaries, sets, and enums|[Day 2](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
+|Day 3|Operators, Conditions|[Day 3](https://velog.io/@sun02/100-days-of-Swift-Day-3)|
+|Day 4|Loops, loops, and more loops|[Day 4](https://velog.io/@sun02/100-days-of-Swift-Day-4)|
+|Day 5|Functions, parameters, and errors|[Day 5](https://velog.io/@sun02/100-days-of-Swift-Day-5)|
+|Day 6|closures part one|[Day 6](https://velog.io/@sun02/100-days-of-Swift-Day-6)|
+|Day 7|Closures part two|[Day 7](https://velog.io/@sun02/100-days-of-Swift-Day-7)|
+|Day 8|Structs, properties, and methods|[Day 8](https://velog.io/@sun02/100-days-of-Swift-Day-8)|
+|Day 9|Access control, static properties, and laziness|[Day 9](https://velog.io/@sun02/100days-of-Swift-Day-9)|
+|Day 10|Classes and inheritance|[Day 10](https://velog.io/@sun02/100-days-of-Swift-Day-10)|
+|Day 11|Protocols, extensions, and protocol extensions|[Day 11](https://velog.io/@sun02/100-days-of-Swift-Day-11)|
+
+### Projects
 |Project|Contents|Velog-posts|
 |------|---|---|
 |Project1|View controllers, storyboards, and the FileManager class.|[Day 16](https://velog.io/@sun02/100-days-of-Swift-Day16) </br> [Day 17](https://velog.io/@sun02/100-days-of-Swift-Day-17)|
