@@ -17,8 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-0v-FTl">
-                                <rect key="frame" x="111" y="424" width="192" height="48"/>
+                                <rect key="frame" x="111" y="144" width="192" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNe-su-oqG">
+                                <rect key="frame" x="79" y="292" width="256" height="256"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RNe-su-oqG" secondAttribute="height" multiplier="1:1" id="6v1-tS-PFX"/>
+                                    <constraint firstAttribute="width" constant="256" id="gUn-1v-W1e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVe-QY-bNa">
+                                <rect key="frame" x="151.5" y="598" width="111.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,12 +40,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MVe-QY-bNa" firstAttribute="top" secondItem="RNe-su-oqG" secondAttribute="bottom" constant="50" id="1ES-ov-Gp1"/>
+                            <constraint firstItem="MVe-QY-bNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FUb-f7-SkM"/>
+                            <constraint firstItem="RNe-su-oqG" firstAttribute="centerX" secondItem="LMi-0v-FTl" secondAttribute="centerX" id="GfP-AB-tzt"/>
                             <constraint firstItem="LMi-0v-FTl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fxL-ht-J5u"/>
-                            <constraint firstItem="LMi-0v-FTl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vKC-J0-H1G"/>
+                            <constraint firstItem="RNe-su-oqG" firstAttribute="top" secondItem="LMi-0v-FTl" secondAttribute="bottom" constant="100" id="jt7-7V-skO"/>
+                            <constraint firstItem="LMi-0v-FTl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="o4w-Ei-JhS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="circleImageView" destination="RNe-su-oqG" id="Nlv-0H-72c"/>
                         <outlet property="distantReading" destination="LMi-0v-FTl" id="Gw3-gH-7Cc"/>
+                        <outlet property="locationLabel" destination="MVe-QY-bNa" id="H2F-0q-1vb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
