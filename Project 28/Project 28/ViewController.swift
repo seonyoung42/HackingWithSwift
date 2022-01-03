@@ -22,32 +22,38 @@ class ViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(saveSecretMessage), name: UIApplication.willResignActiveNotification, object: nil)
         
     }
+    
+    
 
     @IBAction func authenticateTapped(_ sender: Any) {
         let context = LAContext()
         var error: NSError?
-        
+
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Identify yourself!"
+            // biometric authentication is available
+            let reason = "Identify yourself"
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self] success, authenticationError in
                 DispatchQueue.main.async {
                     if success {
+                        // biometric authentication success
                         self?.unlockSecretMessage()
                     } else {
-                        // error
+                        // biometric authentication fail
                         let ac = UIAlertController(title: "Authentication failed", message: "you could not be verified; please try again", preferredStyle: .alert)
                         ac.addAction(UIAlertAction(title: "OK", style: .default))
                         self?.present(ac, animated: true)
                     }
                 }
             }
+
         } else {
-            // no bionmetry (touch or face ID)
+            // biometric authentication is not available
             let ac = UIAlertController(title: "Biometry unavailable", message: "Your device if not configured for biometry authentication", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(ac, animated: true)
         }
     }
+    
     
     @objc func adjustForKeyboard(notification: Notification) {
         
