@@ -14,6 +14,8 @@
 		2B653B4D27842380007C7256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B653B4B27842380007C7256 /* Main.storyboard */; };
 		2B653B4F27842385007C7256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B653B4E27842385007C7256 /* Assets.xcassets */; };
 		2B653B57278423FD007C7256 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B653B56278423FD007C7256 /* BuildingNode.swift */; };
+		2B653B5A27843175007C7256 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2B653B5827843175007C7256 /* hitBuilding.sks */; };
+		2B653B5B27843175007C7256 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2B653B5927843175007C7256 /* hitPlayer.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2B653B4E27842385007C7256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B653B5027842385007C7256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B653B56278423FD007C7256 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		2B653B5827843175007C7256 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
+		2B653B5927843175007C7256 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				2B653B4927842380007C7256 /* GameViewController.swift */,
 				2B653B4B27842380007C7256 /* Main.storyboard */,
 				2B653B4E27842385007C7256 /* Assets.xcassets */,
+				2B653B5827843175007C7256 /* hitBuilding.sks */,
+				2B653B5927843175007C7256 /* hitPlayer.sks */,
 				2B653B5027842385007C7256 /* Info.plist */,
 			);
 			path = "Project 29";
@@ -128,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B653B4D27842380007C7256 /* Main.storyboard in Resources */,
+				2B653B5A27843175007C7256 /* hitBuilding.sks in Resources */,
+				2B653B5B27843175007C7256 /* hitPlayer.sks in Resources */,
 				2B653B4427842380007C7256 /* GameScene.sks in Resources */,
 				2B653B4F27842385007C7256 /* Assets.xcassets in Resources */,
 			);
