@@ -1,21 +1,28 @@
-# HackingWithSwift
+# 📚HackingWithSwift
+HackingWithSwift에서 제공하는 [100days of Swift](https://www.hackingwithswift.com/100) 공부과정 기록 repo입니다.
 
-### Introduction to Swift
+## 📑 Introduction to Swift -Swift
 
-|Swift|Contents|Velog-posts|
-|------|---|---|
-|Day 2|Arrays, dictionaries, sets, and enums|[Day 2](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
-|Day 3|Operators, Conditions|[Day 3](https://velog.io/@sun02/100-days-of-Swift-Day-3)|
-|Day 4|Loops, loops, and more loops|[Day 4](https://velog.io/@sun02/100-days-of-Swift-Day-4)|
-|Day 5|Functions, parameters, and errors|[Day 5](https://velog.io/@sun02/100-days-of-Swift-Day-5)|
-|Day 6|closures part one|[Day 6](https://velog.io/@sun02/100-days-of-Swift-Day-6)|
-|Day 7|Closures part two|[Day 7](https://velog.io/@sun02/100-days-of-Swift-Day-7)|
-|Day 8|Structs, properties, and methods|[Day 8](https://velog.io/@sun02/100-days-of-Swift-Day-8)|
-|Day 9|Access control, static properties, and laziness|[Day 9](https://velog.io/@sun02/100days-of-Swift-Day-9)|
-|Day 10|Classes and inheritance|[Day 10](https://velog.io/@sun02/100-days-of-Swift-Day-10)|
-|Day 11|Protocols, extensions, and protocol extensions|[Day 11](https://velog.io/@sun02/100-days-of-Swift-Day-11)|
+| Swift - grammar  |Contents|Velog-posts|
+|:--------|:---|---|
+|[Day 1](https://www.hackingwithswift.com/100/1)|Variables, Simple data types, and string interpolation|[[Swift 문법] - 배열, 집합, 튜플](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
+|[Day 2](https://www.hackingwithswift.com/100/2)|Arrays, dictionaries, sets, and enums|[[Swift 문법] - 배열, 집합, 튜플](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
+|[Day 3](https://www.hackingwithswift.com/100/3)|Operators, Conditions|[[Swift 문법] - 산술 연산자, 복합 연산자, 비교 연산자, 삼항 연산자, Switch, 범위 연산자](https://velog.io/@sun02/100-days-of-Swift-day-3)|
+|[Day 4](https://www.hackingwithswift.com/100/4)|Loops, loops, and more loops|[[Swift 문법] - For loop, While, Repeat, Exit, Skip, Infinite](https://velog.io/@sun02/100-days-of-Swift-Day-4)|
+|[Day 5](https://www.hackingwithswift.com/100/5)|Functions, parameters, and errors|[[Swift 문법] - Function, Parameter, Return ...etc](https://velog.io/@sun02/100-days-of-Swift-Day-5)|
+|[Day 6](https://www.hackingwithswift.com/100/6)|closures part one|[[Swift 문법] - Closure_01](https://velog.io/@sun02/100-days-of-Swift-Day-6)|
+|[Day 7](https://www.hackingwithswift.com/100/7)|Closures part two|[[Swift 문법] - Closure_02](https://velog.io/@sun02/100-days-of-Swift-Day-7)|
+|[Day 8](https://www.hackingwithswift.com/100/8)|Structs, properties, and methods|[[Swift 문법] - 구조체 (Struct)](https://velog.io/@sun02/100-days-of-Swift-Day-8)|
+|[Day 9](https://www.hackingwithswift.com/100/9)|Access control, static properties, and laziness|[[Swift 문법] - 이니셜라이저, self, lazy, static, access control](https://velog.io/@sun02/100days-of-Swift-Day-9)|
+|[Day 10](https://www.hackingwithswift.com/100/10)|Classes and inheritance|[[Swift 문법] - Class](https://velog.io/@sun02/100-days-of-Swift-Day-10)|
+|[Day 11](https://www.hackingwithswift.com/100/11)|Protocols, extensions, and protocol extensions|[[Swift 문법] - Protocol, Extension](https://velog.io/@sun02/100-days-of-Swift-Day-11)|
+|[Day 12](https://www.hackingwithswift.com/100/12)|Optionals, unwrapping, and typecasting|[[Swift 문법] - Optional](https://velog.io/@sun02/100-days-of-Swift-Day-12)|
+|[Day 13](https://www.hackingwithswift.com/100/13)|Swift review: Variables and constants, Types of Data, Operators,<br> String interpolation, Arrays, Dictionaries, Conditional statements, Loops, Switch case |[[Swift 문법] - 변수,상수,타입, 연산자, 문자열 보간](https://velog.io/@sun02/100-days-of-Swift-Day-13-1)<br>[[Swift 문법] - 배열, 딕셔너리, 조건문, Loop, Switch](https://velog.io/@sun02/100-days-of-Swift-Day-13-2)|
+|[Day 14](https://www.hackingwithswift.com/100/14)|Swift review: Functions, Optionals, Optional chaining, Enumerations, Structs, Classes|[[Swift 문법] - 함수, 옵셔널, 옵셔널 언래핑](https://velog.io/@sun02/100-days-of-Swift-Day-14-1)<br>[[Swift 문법] - 옵셔널 체이닝, 열거형, 구조체, 클래스](https://velog.io/@sun02/100-days-of-Swift-Day-14-2)|
+|[Day 15](https://www.hackingwithswift.com/100/15)|Swift review: Properties, Static properties and methods, Access control, Polymorphism and typecasting, Closures|[[Swift 문법] - 프로퍼티, 공유 프로퍼티, 접근 제어, 다형성, 클로져](https://velog.io/@sun02/100-days-of-Swift-Day-15)|
 
-### Projects
+
+## 📱 Projects -UIKit
 |Project|Contents|Velog-posts|
 |------|---|---|
 |Project1|View controllers, storyboards, and the FileManager class.|[Day 16](https://velog.io/@sun02/100-days-of-Swift-Day16) </br> [Day 17](https://velog.io/@sun02/100-days-of-Swift-Day-17)|
