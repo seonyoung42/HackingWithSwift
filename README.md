@@ -5,7 +5,6 @@ HackingWithSwift에서 제공하는 [100days of Swift](https://www.hackingwithsw
 
 | Swift - grammar  |Contents|Velog-posts|
 |:--------|:---|---|
-|[Day 1](https://www.hackingwithswift.com/100/1)|Variables, Simple data types, and string interpolation|[[Swift 문법] - 배열, 집합, 튜플](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
 |[Day 2](https://www.hackingwithswift.com/100/2)|Arrays, dictionaries, sets, and enums|[[Swift 문법] - 배열, 집합, 튜플](https://velog.io/@sun02/100-days-of-Swift-Day-2)|
 |[Day 3](https://www.hackingwithswift.com/100/3)|Operators, Conditions|[[Swift 문법] - 산술 연산자, 복합 연산자, 비교 연산자, 삼항 연산자, Switch, 범위 연산자](https://velog.io/@sun02/100-days-of-Swift-day-3)|
 |[Day 4](https://www.hackingwithswift.com/100/4)|Loops, loops, and more loops|[[Swift 문법] - For loop, While, Repeat, Exit, Skip, Infinite](https://velog.io/@sun02/100-days-of-Swift-Day-4)|
